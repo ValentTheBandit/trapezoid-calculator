@@ -26,6 +26,7 @@ body {
 
 .form-container {
     width: 40%;
+    padding-right: 20px;
 }
 
 h1 {
@@ -80,10 +81,10 @@ img {
 .image-container {
     width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* A kép balra tolása */
     align-items: center;
+    padding-left: 10px; /* Ha finomhangolni kell */
 }
-
 .image-container img {
     max-width: 100
 }
