@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derékszögű Trapéz Számítás</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Derékszögű Trapéz Számítás</h1>
+            <form id="trapForm">
+                <label for="a">Adja meg az 'a' oldalt:</label>
+                <input type="number" step="any" id="a" required placeholder="Pl. 3.5">
+                
+                <label for="b">Adja meg a 'b' oldalt:</label>
+                <input type="number" step="any" id="b" required placeholder="Pl. 4.2">
+                
+                <label for="c">Adja meg a 'c' oldalt:</label>
+                <input type="number" step="any" id="c" required placeholder="Pl. 5.1">
+                
+                <button type="submit">Számítás</button>
+            </form>
+            
+            <div id="result" class="result">
+                <p><strong>Alpha szög:</strong> <span id="angle"></span> fok</p>
+                <p><strong>"d" oldal:</strong> <span id="dSide"></span></p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="Trapéz.png" alt="Derékszögű Trapéz">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
