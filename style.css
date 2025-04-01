@@ -74,6 +74,7 @@ button:hover {
 
 img {
     height: 250px;
+    background: none;
 }
 
 .image-container {
