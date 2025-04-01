@@ -10,10 +10,13 @@ document.getElementById('trapForm').addEventListener('submit', function(event) {
     const x = c - a;
     const d = Math.sqrt(b * b + x * x);
     const alphaRad = Math.atan(x / b);
+    const betaRad = Math.atan(b / x);
     const tompaszog = (Math.degrees(alphaRad) + 90).toFixed(2);
+    const hegyesszog = Math.degrees(betaRad).toFixed(2);
     
     // Eredmények megjelenítése
-    document.getElementById('angle').textContent = tompaszog;
+    document.getElementById('alpha').textContent = tompaszog;
+    document.getElementById('beta').textContent = hegyesszog;
     document.getElementById('dSide').textContent = d.toFixed(2);
     
     // Eredmények div megjelenítése
